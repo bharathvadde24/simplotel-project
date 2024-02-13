@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+* {
+    margin: 0;
+}
+
+nav {
+    background-color: #ff7171;
+    padding: 16px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 16px;
+    list-style: none;
+}
+
+.page1 {
+    background-image: linear-gradient(135deg, #fff5af, #ffaef4);
+    height: 98vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.heroImg {
+    width: 100%;
+    height: 100%;
+}
+
+button {
+    background-color: #ff7171;
+    color: #ffffff;
+    width: fit-content;
+    padding: 8px 16px;
+}
+
+.heroInfo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    margin: auto;
+}
+
+.page2 {
+    background-image: linear-gradient(135deg, #fff5af, #ffaef4);
+    height: 98vh;
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.part1 {
+    margin: auto;
+}
+
+.imgGal {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 50%;
+    width: 50%;
+    gap: 0.5rem;
+    margin: auto 10px auto auto;
+}
+
+.imgWrap1,
+.imgWrap2,
+.imgWrap3 {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.imgWrap1 {
+    background-image: url("https://res.cloudinary.com/vaddebharath-com/image/upload/v1705854189/pexels-rachel-claire-6752433_jospcq.jpg");
+}
+
+.imgWrap2 {
+    grid-row-end: span 2;
+    background-image: url("https://res.cloudinary.com/vaddebharath-com/image/upload/v1705854246/pexels-mister-mister-3434523_qrcz0k.jpg");
+}
+
+.imgWrap3 {
+    background-image: url("https://res.cloudinary.com/vaddebharath-com/image/upload/v1705854295/pexels-eva-bronzini-6141651_wsljbl.jpg");
+}
+
+.card {
+    background-color: #ff7171;
+    height: fit-content;
+    width: fit-content;
+    padding: 2rem;
+    margin: auto auto auto 10px;
+}
+
+.click {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+@media (max-width: 900px) {
+    .imgGal {
+        height: 40%;
+        width: 75%;
+    }
+}
+
+@media (max-width: 500px) {
+    ul {
+        display: none;
+    }
+
+    p {
+        font-size: 0.5em;
+    }
+
+    .page1 {
+        grid-template-columns: 1fr;
+    }
+
+    .page2 {
+        grid-template-columns: 1fr;
+
+    }
+
+    .imgGal {
+        height: 100%;
+        width: 75%;
+        margin: auto;
+        margin-top: 20%;
+
+    }
+
+    .card {
+        padding: 1rem;
+        margin: auto;
+    }
+}
